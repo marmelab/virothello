@@ -1,0 +1,38 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "env": {
+        "es6": true,
+        "jest/globals": true
+    },
+    "plugins": [
+        "react",
+        "jest",
+        "prettier",
+        "jsx-a11y"
+    ],
+    "extends": [
+        "eslint:recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:react/recommended",
+        "plugin:jsx-a11y/recommended",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "no-unused-vars": [
+            "error",
+            {
+                "ignoreRestSiblings": true
+            }
+        ],
+        "jest/no-focused-tests": "error",
+        "jest/no-identical-title": "off",
+        "jest/valid-expect": "error",
+        "react/display-name": "off"
+    }
+}
