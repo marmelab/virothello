@@ -5,8 +5,6 @@ import { TYPE_WHITE, TYPE_BLACK } from '../cell/Cell';
 
 describe('Game', () => {
     it('create should return valid game', () => {
-        const now = new Date();
-
         const players = [createPlayer('john', TYPE_WHITE), createPlayer('doe', TYPE_BLACK)];
 
         const expectedGame = {
@@ -14,9 +12,8 @@ describe('Game', () => {
             players,
             playerIndex: 0,
             isFinished: false,
-            date: now,
         };
 
-        expect(create(players)).toEqual(expectedGame);
+        expect(create(players)).toMatchObject(expectedGame);
     });
 });
