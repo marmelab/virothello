@@ -2,6 +2,8 @@
 
 Virothello is a reversi game implementation using augmented reality thanks to [Viro React](https://viromedia.com/viroreact/) platform.
 
+[![virothello(https://user-images.githubusercontent.com/1064780/52704168-37343b00-2f80-11e9-95ec-7220ebd527eb.png)](https://vimeo.com/316986012)
+
 ## Installation
 
 ```sh
